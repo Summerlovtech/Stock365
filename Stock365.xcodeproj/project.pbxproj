@@ -13,6 +13,15 @@
 		4BB702DE28034AA2004D6192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB702DC28034AA2004D6192 /* Main.storyboard */; };
 		4BB702E028034AA3004D6192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB702DF28034AA3004D6192 /* Assets.xcassets */; };
 		4BB702E328034AA3004D6192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB702E128034AA3004D6192 /* LaunchScreen.storyboard */; };
+		4BB702EE28034C51004D6192 /* TableViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702ED28034C51004D6192 /* TableViewCode.swift */; };
+		4BB702F128034C6C004D6192 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702EF28034C6C004D6192 /* StockTableViewCell.swift */; };
+		4BB702F228034C6C004D6192 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB702F028034C6C004D6192 /* StockTableViewCell.xib */; };
+		4BB702F428034CAE004D6192 /* APIKeyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702F328034CAE004D6192 /* APIKeyFile.swift */; };
+		4BB702F828034F65004D6192 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702F728034F65004D6192 /* APIURLs.swift */; };
+		4BB702FA28035241004D6192 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702F928035241004D6192 /* StockModel.swift */; };
+		4BB702FC2803570C004D6192 /* StockNetworkFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702FB2803570C004D6192 /* StockNetworkFunction.swift */; };
+		4BB702FE28035BF4004D6192 /* ProtocolSendStockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702FD28035BF4004D6192 /* ProtocolSendStockData.swift */; };
+		7929D40992E71E0923BF1C8A /* Pods_Stock365.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8645253F4AE2BB5EE190A1E9 /* Pods_Stock365.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,17 @@
 		4BB702DF28034AA3004D6192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BB702E228034AA3004D6192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BB702E428034AA3004D6192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BB702ED28034C51004D6192 /* TableViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCode.swift; sourceTree = "<group>"; };
+		4BB702EF28034C6C004D6192 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		4BB702F028034C6C004D6192 /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
+		4BB702F328034CAE004D6192 /* APIKeyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyFile.swift; sourceTree = "<group>"; };
+		4BB702F728034F65004D6192 /* APIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
+		4BB702F928035241004D6192 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		4BB702FB2803570C004D6192 /* StockNetworkFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNetworkFunction.swift; sourceTree = "<group>"; };
+		4BB702FD28035BF4004D6192 /* ProtocolSendStockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolSendStockData.swift; sourceTree = "<group>"; };
+		8645253F4AE2BB5EE190A1E9 /* Pods_Stock365.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock365.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0B03B6E51870F6F439964D /* Pods-Stock365.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock365.debug.xcconfig"; path = "Target Support Files/Pods-Stock365/Pods-Stock365.debug.xcconfig"; sourceTree = "<group>"; };
+		F790B9599DDDBAD425E829FF /* Pods-Stock365.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock365.release.xcconfig"; path = "Target Support Files/Pods-Stock365/Pods-Stock365.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7929D40992E71E0923BF1C8A /* Pods_Stock365.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 			children = (
 				4BB702D528034AA2004D6192 /* Stock365 */,
 				4BB702D428034AA2004D6192 /* Products */,
+				BD2F966632650B62D4EECD91 /* Pods */,
+				B3B7CDC984BDA0E65AFCE8F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,64 @@
 		4BB702D528034AA2004D6192 /* Stock365 */ = {
 			isa = PBXGroup;
 			children = (
+				4BB702EC28034BF0004D6192 /* Models */,
+				4BB702EB28034BE5004D6192 /* Utilities */,
+				4BB702EA28034AB0004D6192 /* InitialController */,
 				4BB702D628034AA2004D6192 /* AppDelegate.swift */,
 				4BB702D828034AA2004D6192 /* SceneDelegate.swift */,
-				4BB702DA28034AA2004D6192 /* ViewController.swift */,
 				4BB702DC28034AA2004D6192 /* Main.storyboard */,
 				4BB702DF28034AA3004D6192 /* Assets.xcassets */,
 				4BB702E128034AA3004D6192 /* LaunchScreen.storyboard */,
 				4BB702E428034AA3004D6192 /* Info.plist */,
 			);
 			path = Stock365;
+			sourceTree = "<group>";
+		};
+		4BB702EA28034AB0004D6192 /* InitialController */ = {
+			isa = PBXGroup;
+			children = (
+				4BB702DA28034AA2004D6192 /* ViewController.swift */,
+				4BB702ED28034C51004D6192 /* TableViewCode.swift */,
+				4BB702EF28034C6C004D6192 /* StockTableViewCell.swift */,
+				4BB702F028034C6C004D6192 /* StockTableViewCell.xib */,
+				4BB702FB2803570C004D6192 /* StockNetworkFunction.swift */,
+			);
+			path = InitialController;
+			sourceTree = "<group>";
+		};
+		4BB702EB28034BE5004D6192 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4BB702F328034CAE004D6192 /* APIKeyFile.swift */,
+				4BB702F728034F65004D6192 /* APIURLs.swift */,
+				4BB702FD28035BF4004D6192 /* ProtocolSendStockData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4BB702EC28034BF0004D6192 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BB702F928035241004D6192 /* StockModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3B7CDC984BDA0E65AFCE8F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8645253F4AE2BB5EE190A1E9 /* Pods_Stock365.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2F966632650B62D4EECD91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B03B6E51870F6F439964D /* Pods-Stock365.debug.xcconfig */,
+				F790B9599DDDBAD425E829FF /* Pods-Stock365.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BB702E728034AA3004D6192 /* Build configuration list for PBXNativeTarget "Stock365" */;
 			buildPhases = (
+				9517DDFD7AFBB9A2E9CFEFAA /* [CP] Check Pods Manifest.lock */,
 				4BB702CF28034AA2004D6192 /* Sources */,
 				4BB702D028034AA2004D6192 /* Frameworks */,
 				4BB702D128034AA2004D6192 /* Resources */,
+				2DC5D099499B220EF47988A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +201,68 @@
 			files = (
 				4BB702E328034AA3004D6192 /* LaunchScreen.storyboard in Resources */,
 				4BB702E028034AA3004D6192 /* Assets.xcassets in Resources */,
+				4BB702F228034C6C004D6192 /* StockTableViewCell.xib in Resources */,
 				4BB702DE28034AA2004D6192 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DC5D099499B220EF47988A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock365/Pods-Stock365-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock365/Pods-Stock365-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stock365/Pods-Stock365-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9517DDFD7AFBB9A2E9CFEFAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stock365-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BB702CF28034AA2004D6192 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB702F828034F65004D6192 /* APIURLs.swift in Sources */,
+				4BB702FA28035241004D6192 /* StockModel.swift in Sources */,
+				4BB702F428034CAE004D6192 /* APIKeyFile.swift in Sources */,
+				4BB702F128034C6C004D6192 /* StockTableViewCell.swift in Sources */,
+				4BB702FE28035BF4004D6192 /* ProtocolSendStockData.swift in Sources */,
+				4BB702EE28034C51004D6192 /* TableViewCode.swift in Sources */,
 				4BB702DB28034AA2004D6192 /* ViewController.swift in Sources */,
+				4BB702FC2803570C004D6192 /* StockNetworkFunction.swift in Sources */,
 				4BB702D728034AA2004D6192 /* AppDelegate.swift in Sources */,
 				4BB702D928034AA2004D6192 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +408,7 @@
 		};
 		4BB702E828034AA3004D6192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0B03B6E51870F6F439964D /* Pods-Stock365.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +436,7 @@
 		};
 		4BB702E928034AA3004D6192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F790B9599DDDBAD425E829FF /* Pods-Stock365.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
