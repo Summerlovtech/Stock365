@@ -21,6 +21,7 @@
 		4BB702FA28035241004D6192 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702F928035241004D6192 /* StockModel.swift */; };
 		4BB702FC2803570C004D6192 /* StockNetworkFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702FB2803570C004D6192 /* StockNetworkFunction.swift */; };
 		4BB702FE28035BF4004D6192 /* ProtocolSendStockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702FD28035BF4004D6192 /* ProtocolSendStockData.swift */; };
+		4BB703002803C73F004D6192 /* LeadingTrailingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB702FF2803C73F004D6192 /* LeadingTrailingFile.swift */; };
 		7929D40992E71E0923BF1C8A /* Pods_Stock365.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8645253F4AE2BB5EE190A1E9 /* Pods_Stock365.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		4BB702F928035241004D6192 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		4BB702FB2803570C004D6192 /* StockNetworkFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNetworkFunction.swift; sourceTree = "<group>"; };
 		4BB702FD28035BF4004D6192 /* ProtocolSendStockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolSendStockData.swift; sourceTree = "<group>"; };
+		4BB702FF2803C73F004D6192 /* LeadingTrailingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingTrailingFile.swift; sourceTree = "<group>"; };
 		8645253F4AE2BB5EE190A1E9 /* Pods_Stock365.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock365.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0B03B6E51870F6F439964D /* Pods-Stock365.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock365.debug.xcconfig"; path = "Target Support Files/Pods-Stock365/Pods-Stock365.debug.xcconfig"; sourceTree = "<group>"; };
 		F790B9599DDDBAD425E829FF /* Pods-Stock365.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock365.release.xcconfig"; path = "Target Support Files/Pods-Stock365/Pods-Stock365.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				4BB702F328034CAE004D6192 /* APIKeyFile.swift */,
 				4BB702F728034F65004D6192 /* APIURLs.swift */,
 				4BB702FD28035BF4004D6192 /* ProtocolSendStockData.swift */,
+				4BB702FF2803C73F004D6192 /* LeadingTrailingFile.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				4BB702FC2803570C004D6192 /* StockNetworkFunction.swift in Sources */,
 				4BB702D728034AA2004D6192 /* AppDelegate.swift in Sources */,
 				4BB702D928034AA2004D6192 /* SceneDelegate.swift in Sources */,
+				4BB703002803C73F004D6192 /* LeadingTrailingFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

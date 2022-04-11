@@ -24,8 +24,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.sendStockPriceDelegate = self
         return cell
     }
-    
-          
 
 }
 

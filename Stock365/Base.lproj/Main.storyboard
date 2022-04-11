@@ -121,7 +121,13 @@
                             <constraint firstItem="OMt-bz-T17" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="siq-xd-l6k"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Stock Price" id="PCJ-f7-m34"/>
+                    <navigationItem key="navigationItem" title="Stock Price" id="PCJ-f7-m34">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SHb-Lf-uQ0">
+                            <connections>
+                                <action selector="addStocksAction:" destination="BYZ-38-t0r" id="mhZ-2n-xkO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblCompanyName" destination="pRU-q8-Np5" id="wpW-Q9-BVg"/>
                         <outlet property="lblDayHigh" destination="Gaq-mv-hhM" id="Sd8-se-apP"/>

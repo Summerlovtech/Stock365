@@ -66,49 +66,49 @@ class ViewController: UIViewController, SendStockDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 //        getStockValue()
+                
         stocks = initializeStocks()
+        
     }
     
-//    func getStockValue()-> [StockModel]{
-        
-//        let url = getStockURL(stock)
-//
-//        getStockData(url)
-//        .done { stockModel in
-//
-//            self.lblCompanyName.text = "Company: \(stockModel.name)"
-//            self.lblSymbol.text = "Symbol: \(stockModel.symbol)"
-//            self.lblPrice.text = "Price: \(stockModel.price)"
-//            self.lblDayHigh.text = "Day High:  \(stockModel.dayHigh)"
-//            self.lblDayLow.text = "Day Low: \(stockModel.dayLow)"
-//
-//
-//        }
-//        .catch { error in
-//            print(error.localizedDescription)
-//        }
-//    }
-    
-//    func getAAPLStock(){
-//        let url = getStockURL("AAPL")
-//
-//        getStockData(url)
-//        .done { stockModel in
-//
-//            self.lblCompanyName.text = "Company: \(stockModel.name)"
-//            self.lblSymbol.text = "Symbol: \(stockModel.symbol)"
-//            self.lblPrice.text = "Price: \(stockModel.price)"
-//            self.lblDayHigh.text = "Day High:  \(stockModel.dayHigh)"
-//            self.lblDayLow.text = "Day Low: \(stockModel.dayLow)"
-//
-//
-//        }
-//        .catch { error in
-//            print(error.localizedDescription)
-//        }
-//    }
    
+    @IBAction func addStocksAction(_ sender: Any) {
+        var txtField : UITextField?
+        
+        let alertController = UIAlertController(title: "Add Stock", message: "", preferredStyle: .alert)
+             
+                let OKButton = UIAlertAction(title: "OK", style: .default) { action in
+                    guard let symbol = txtField?.text else {return}
 
+                    let newStockURL = getStockURL(symbol.trimmingLeadingAndTrailingSpaces().uppercased())
+                    getStockData(newStockURL).done { stockPriceModel in
+                        if (stockPriceModel.symbol == "") {
+                            return
+                        }
+                        let newStock = StockModel(stockPriceModel.name,stockPriceModel.symbol)
+                        self.stocks.append(newStock)
+                        self.tblView.reloadData()
+                    }
+                    .catch { error in
+                        print("in getStockPriceAction \(error.localizedDescription)")
+                    }
+                }
+                let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                    
+                }
+                alertController.addAction(OKButton)
+                alertController.addAction(cancelButton)
+                
+                alertController.addTextField { stockTextField in
+                    stockTextField.placeholder = "Type Stock Symbol"
+                    txtField = stockTextField
+                }
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+    }
+    
+    
 
 }
 
